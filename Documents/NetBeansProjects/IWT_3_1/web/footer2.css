@@ -1,0 +1,29 @@
+/*footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}*/
+/**html #footer {
+	margin-top: -2px;  prevents infinite scroll if #footer have a border of 2px
+	position: absolute;
+	top: expression(documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight));
+}*/
+footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+
+  left: 0;
+  padding: 1rem;
+  background-color: #11A3ED;
+  text-align: center;
+  font: 16px/16px "Open Sans",Sans-Serif;
+  font-weight: 500; 
+}
+#footerLinks{
+    float: bottom;
+  
+}

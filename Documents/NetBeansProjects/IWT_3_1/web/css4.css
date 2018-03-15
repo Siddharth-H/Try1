@@ -1,0 +1,44 @@
+form {
+    border: 0px solid #f1f1f1;
+}
+
+input[type=text], input[type=password],input[type=email] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #11a3ed;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+.container {
+    padding: 50px;
+}
+
+span.psw {
+   
+    padding-top: 16px;
+}
+body{
+    color:white;
+}
+.box
+{
+    width: 900px;
+}
+@media (max-width: 745px)
+{
+    .box
+    {
+        width: 700px;
+    }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>registerUser2</servlet-name>
+        <servlet-class>registerUser2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>userLogin</servlet-name>
+        <servlet-class>userLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateUser</servlet-name>
+        <servlet-class>updateUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerUser2</servlet-name>
+        <url-pattern>/registerUser2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>userLogin</servlet-name>
+        <url-pattern>/userLogin</url-pattern>
+    </servlet-mapping>
+    
+    <error-page>
+    <error-code>404</error-code>
+        <location>/errorPage.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.sql.SQLException</exception-type>
+        <location>/errorSQL.jsp</location>
+    </error-page>
+        <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/commonErrorPage.jsp</location>
+    </error-page> 
+    <servlet-mapping>
+        <servlet-name>updateUser</servlet-name>
+        <url-pattern>/updateUser</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <description>Location to store uploaded files</description>
+        <param-name>file-upload</param-name>
+        <param-value>C:\Users\Siddharth\Documents\NetBeansProjects\IWT_3_1\web\assignments\</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <!--    <welcome-file-list>
+        <welcome-file></welcome-file>
+    </welcome-file-list>-->
+</web-app>

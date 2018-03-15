@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+     <class name="dto.Songs" table="Song">
+        <id name="id" column="id"></id>
+        <property name="album" column="album"></property>
+        <property name="title" column="title"></property>
+        <property name="artist" column="artist"></property>
+        <property name="year" column="year"></property>
+        <property name="length" column="length"></property>
+        <property name="genre" column="genre"></property>
+    </class>
+  
+
+</hibernate-mapping>
